@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="outils/bootstrap4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -49,8 +50,8 @@
 				<p>Logo : <img class="mx-auto d-block img-fluid" style="max-width:150px;"
 						src="./images/bootstrap-logo.jpg" alt="Logo de Bootstrap" /></p>
 				<h2>Exemples de sites réalisés avec Bootstrap</h2>
-		
-					<!-- Carousel -->
+
+				<!-- Carousel -->
 				<div id="idCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
 					<ul class="carousel-indicators">
 						<li data-target="#idCarousel" data-slide-to="0" class="active"></li>
@@ -89,13 +90,20 @@
 
 			<!-- COLONNE DE DROITE -->
 			<div class="col-sm-4">
-				<div>
-					<form method="post" action="#">
-						<label for="recherche">Rechercher : </label><input type="text" name="recherche"
-							id="recherche" />
-						<input type="submit" name="btrechercher" value="Rechercher">
-					</form>
-				</div>
+				<!-- Formulaire de recherche -->
+				<div class="card">
+					<div class="card-header"> <i class="fa fa-search"></i> Rechercher </div>
+					<div class="card-body">
+						<form method="post" action="#">
+							<div class="form-group">
+								<input class="form-control" type="text" name="recherche" id="recherche" />
+							</div>
+							<div class="form-group">
+								<button type="button" class="btn-success form-control"> Rechercher </button>
+							</div>
+						</form>
+					</div>
+				</div> <!-- Fin Formulaire de recherche -->
 				<div>
 					<p>Laisser un commentaire :</p>
 					<form method="post" action="#">
